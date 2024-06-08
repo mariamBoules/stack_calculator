@@ -1,15 +1,13 @@
-import { View, Text } from "react-native";
+import react from "react";
+import { legacy_createStore as createStore } from "redux";
+import { Provider } from "react-redux";
+import Main from "./Main";
+import {reducer} from "./modules";
 
-export default function App() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Universal React with Expo</Text>
-    </View>
-  );
-}
+const store = createStore(reducer);
+
+export default () => (
+  <Provider store = {store}>
+    <Main />
+  </Provider>
+);
