@@ -1,4 +1,4 @@
-```
+
 # Stack Calculator
 
 A simple stack-based calculator built with React Native. This calculator allows users to perform basic arithmetic operations using a stack data structure.
