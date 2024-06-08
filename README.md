@@ -76,7 +76,7 @@ If you have any questions, feel free to reach out to me at [mariamboules98@gmail
 - [React Native Documentation](https://reactnative.dev/docs/getting-started)
 - [Redux Documentation](https://redux.js.org/introduction/getting-started)
 - [React Navigation Documentation](https://reactnavigation.org/docs/getting-started)
-```
+
 
 
 
