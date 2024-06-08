@@ -1,44 +1,82 @@
-# My Universal React Project
+```
+# Stack Calculator
 
-<p>
-  <!-- iOS -->
-  <a href="https://itunes.apple.com/app/apple-store/id982107779">
-    <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
-  </a>
-  <!-- Android -->
-  <a href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample">
-    <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
-  </a>
-  <!-- Web -->
-  <a href="https://docs.expo.dev/workflow/web/">
-    <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
-  </a>
-</p>
+A simple stack-based calculator built with React Native. This calculator allows users to perform basic arithmetic operations using a stack data structure.
 
-## 🚀 How to use
+## Features
 
-- Install packages with `yarn` or `npm install`.
-  - If you have native iOS code run `npx pod-install`
-- Run `yarn start` or `npm run start` to start the bundler.
-- Open the project in a React runtime to try it:
-  - iOS: [Client iOS](https://itunes.apple.com/app/apple-store/id982107779)
-  - Android: [Client Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample)
-  - Web: Any web browser
+- Basic arithmetic operations: addition, subtraction, multiplication, division, and power
+- Stack-based calculation
+- Clear stack functionality
+- Swap last two inputs functionality
+- Toggle negative for any input
 
-## Running/Modifying Native Code
+## Installation
 
-You can generate native iOS and Android projects from your Expo config file (**app.json**/ **app.config.js**) by runnning `npx expo prebuild`. These native projects can then be compiled and run via XCode and Android Studio.
+1. Clone the repository:
 
-> 💡 Learn more about [native code in Expo](https://docs.expo.dev/workflow/customizing/)
+```bash
+git clone https://github.com/mariamBoules/stack_calculator.git
+cd stack_calculator
+```
 
-## Publishing
+2. Install dependencies:
 
-- Deploy the native app to the App store and Play store using this guide: [Deployment](https://docs.expo.dev/distribution/app-stores/).
-- Deploy the website using this guide: [Web deployment](https://docs.expo.dev/distribution/publishing-websites/).
+```bash
+npm install
+```
 
-## 📝 Notes
+3. Run the app:
 
-- Learn more about [Universal React](https://docs.expo.dev/).
-- See what API and components are [available in the React runtimes](https://docs.expo.dev/versions/latest/).
-- Find out more about developing apps and websites: [Guides](https://docs.expo.dev/guides/).
-# stack_calculator
+```bash
+npx react-native run-android  # For Android
+npx react-native run-ios      # For iOS
+```
+
+## Usage
+
+1. Enter numbers using the numeric keypad.
+2. Use the arithmetic operation buttons to perform calculations.
+3. Use the `Enter` button to push the result to the stack.
+4. Use the `Clear` button to clear the stack.
+
+## Code Structure
+
+- `App.js`: Main component that renders the calculator UI.
+- `Main.js`: Main handles user input and calculator styles.
+- `/modules.js`: Modules handles calculator states.
+- `/Button.js`: Button component that handles button styles and functionality.
+
+## Technologies Used
+
+- React Native
+- JavaScript
+- [Redux](https://redux.js.org/)
+
+## Contributing
+
+Contributions are welcome! Please fork this repository and submit a pull request for any features, bug fixes, or enhancements.
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Create a new pull request.
+
+
+## Contact
+
+If you have any questions, feel free to reach out to me at [mariamboules98@gmail.com](mailto:mariamboules98@gmail.com).
+
+---
+
+## Acknowledgements
+
+- [React Native Documentation](https://reactnative.dev/docs/getting-started)
+- [Redux Documentation](https://redux.js.org/introduction/getting-started)
+- [React Navigation Documentation](https://reactnavigation.org/docs/getting-started)
+```
+
+
+
